@@ -5,8 +5,37 @@
 }
 
 body {
-    background-color: black;
+    background-color: #c2185b;
     color: white;
-    font-family: sans-serif;
-    padding: 1rem;
+    font-family: Arial, sans-serif;
 }
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom {
+    background-color: #f8bbd0;
+    color: #c2185b;
+    font-weight: bold;
+}
+
+.btn-custom:hover {
+    background-color: #f48fb1;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.ticket-table th,
+.ticket-table td {
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+

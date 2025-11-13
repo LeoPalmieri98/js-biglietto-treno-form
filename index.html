@@ -5,14 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto Treno Form</title>
-    <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
         integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
+<div class="container py-5">
+    <h2 class="text-center fw-bold mb-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
 
-<body>
-    <h1>Biglietto Treno Form</h1>
+    <!-- Form: Compila il Biglietto -->
+    <div class="card p-4 mb-5">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label class="form-label text-dark fw-bold">Nome Cognome</label>
+                <input id="control-name" type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label text-dark fw-bold">Km da percorrere</label>
+                <input id="control-km" type="number" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label text-dark fw-bold">Fascia d'età</label>
+                <select class="form-select">
+                    <option>Minorenne</option>
+                    <option selected>Maggiorenne</option>
+                    <option selected>Over 65</option>
+                </select>
+            </div>
+        </div>
 
-    <script src="main.js"></script>
+        <div class="mt-4 text-center">
+            <button id="data-control" class="btn btn-custom me-2">Genera</button>
+            <button class="btn btn-secondary">Annulla</button>
+        </div>
+    </div>
+
+    <!-- Biglietto del Cliente -->
+    <h3 class="section-title">IL TUO BIGLIETTO</h3>
+
+    <div class="card p-4 bg-light text-dark">
+        <h5 class="fw-bold">DETTAGLIO PASSEGGERI</h5>
+        <table class="table table-bordered mt-3 ticket-table">
+            <thead class="table-secondary">
+                <tr>
+                    <th>NOME PASSEGGERO</th>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice CP</th>
+                    <th>Costo biglietto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong></strong></td>
+                    <td>Biglietto Standard</td>
+                    <td>5</td>
+                    <td>92911</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+
 </html>
