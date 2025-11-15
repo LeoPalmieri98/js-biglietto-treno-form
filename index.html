@@ -26,10 +26,10 @@
             </div>
             <div class="col-md-4">
                 <label class="form-label text-dark fw-bold">Fascia d'età</label>
-                <select class="form-select">
-                    <option>Minorenne</option>
-                    <option selected>Maggiorenne</option>
-                    <option selected>Over 65</option>
+                <select id="control-age" class="form-select">
+                    <option value="tariffa-anziani" selected>Over 65</option>
+                    <option value= "tariffa-young" selected>Minorenne</option>
+                    <option value= "tariffa-base" selected>Maggiorenne</option>
                 </select>
             </div>
         </div>
@@ -61,7 +61,7 @@
                     <td>Biglietto Standard</td>
                     <td>5</td>
                     <td>92911</td>
-                    <td></td>
+                    <td id="result-pay"></td>
                 </tr>
             </tbody>
         </table>
